@@ -17,7 +17,7 @@
 
 #define TASK1_PRIORITY 3
 #define TASK2_PRIORITY 2
-#define TASK3_PRIORITY 1
+#define TASK3_PRIORITY 0
 #define TASK3_SIMULATED_PROCESS_TIME 800
 
 uint32_t task3_yield_timeout = 0;
