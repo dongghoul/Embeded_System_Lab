@@ -63,6 +63,7 @@ void vtask3(void *pvParameters)
     while (1)
     {
         if (task3_yield_timeout <= xTaskGetTickCount()){
+            printf("%ld: task3 about to yield\n", xTaskGetTickCount());
             taskYIELD();
             //delay yield time (blocking delay)
             task3_yield_timeout = xTaskGetTickCount() + TASK3_SIMULATED_PROCESS_TIME;
